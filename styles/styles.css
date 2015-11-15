@@ -15,24 +15,25 @@ aside{
 
 }
 
+.mainAside{
+  background-color: #d6d6d6;
+  font-family: 'Architects Daughter', cursive;
+  display: inline-block;
+  float: bottom;
+  margin-left: 20px;
+
+}
+
 .mainbody{
   background-image: url(../images/background.jpg);
-  background-color: #ff9681;
   background-size: 100%;
 }
 
-#play_button {
-  position : center;
-  bottom : 0;
-  font-family: 'Architects Daughter', cursive;
-  background-color: #546d5a;
-  text-align: center;
-  color: #f9f6ef;
-  }
-
   .play {
   font-family: 'Architects Daughter', cursive;
+  font-size: 30px;
   background-size: 100%;
+  background-color: #ff9681;
   color: #ff9681;
   position: absolute;
   margin: auto;
@@ -41,7 +42,7 @@ aside{
   bottom: 0;
   left: 0;
   width: 200px;
-  height: 200px;
+  height: 50px;
 }
 
 table{
