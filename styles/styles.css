@@ -11,6 +11,7 @@ aside{
   font-family: 'Architects Daughter', cursive;
   display: inline-block;
   float: left;
+  margin-left: 20px;
 
 }
 
@@ -43,8 +44,12 @@ aside{
   height: 200px;
 }
 
+table{
+  margin-left: 20px;
+}
+
 td{
-    width:150px; /* you can use % */
+    width:150px;
     height: 150px;
     border-color: gray;
     border-style: solid;
