@@ -15,6 +15,10 @@ aside{
 
 }
 
+.list-unstyled{
+  margin-left: 50px;
+}
+
 .mainAside{
   background-color: #d6d6d6;
   font-family: 'Architects Daughter', cursive;
@@ -29,7 +33,7 @@ aside{
   background-size: 100%;
 }
 
-  .play {
+  .mainplay {
   font-family: 'Architects Daughter', cursive;
   font-size: 30px;
   background-size: 100%;
@@ -43,6 +47,16 @@ aside{
   left: 0;
   width: 200px;
   height: 50px;
+}
+
+  .gameplay {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 15px;
+  background-size: 100%;
+  background-color: #ff9681;
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
 }
 
 table{
