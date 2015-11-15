@@ -43,8 +43,16 @@ aside{
   height: 200px;
 }
 
-.table tr td {
-    max-width: 100%;
-    height: 100%;
-    width: 100%;
+td{
+    width:150px; /* you can use % */
+    height: 150px;
+    border-color: gray;
+    border-style: solid;
+    list-style-image: center;
+}
+
+td img{
+    max-width: 140px;
+    height: auto;
+    width: auto;
 }
