@@ -18,9 +18,6 @@ function gameTimer () {
 //   }
 // }, 3000 ) ;
 
-function addSeconds(){
-  secondsCount++;
-}
 
 function toggleTime() {
   if (this.getAttribute( "data-state" ) === "start") {
