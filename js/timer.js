@@ -1,14 +1,14 @@
 var secondsCount = 0;
 var timerInterval;
-var toggleStart = document.getElementById( "startbtn" );
+var toggleStart = document.getElementById("startbtn");
 var endGame;
 
 function gameTimer () {
-  endGame = setTimeout (gameOver, 20000); {
-    function gameOver () {
-      alert ( "Time is UP!" )
+
+  endGame = setTimeout(gameOver, 20000); 
+    function gameOver() {
+      $('#gameOverModal').modal('show');
     }
-  }
 }
 
 // setTimeout ( function() {
@@ -20,19 +20,21 @@ function gameTimer () {
 
 
 function toggleTime() {
-  if (this.getAttribute( "data-state" ) === "start") {
-    this.innerHTML = "Stop Game";
-    this.setAttribute ( "data-state"  , "stop" ) ;
-    secondsCount = 0;
-    timerInterval = setInterval (addSeconds, 1000);
-  } else {
-    this.innerHTML = "Start Game";
-    clearInterval ( timerInterval );
-    alert ( "You took" + secondsCount  + " seconds");
-  }
+    'use strict';
+    if (this.getAttribute("data-state") === "start") {
+        this.innerHTML = "Stop Game";
+        this.setAttribute("data-state", "stop");
+        secondsCount = 0;
+        var timerInterval = setInterval(addSeconds, 1000);
+    } else {
+        this.innerHTML = "Start Game";
+        clearInterval(timerInterval);
+        document.getElementById("seconds").innerHTML = secondsCount;
+        $('#yourTimeModal').modal('show');
+    }
 }
 
 
 
 
-toggleStart.addEventListener("click" , toggleTime);
+toggleStart.addEventListener("click", toggleTime);

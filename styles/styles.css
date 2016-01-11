@@ -1,14 +1,15 @@
-.title{
+* {
   font-family: 'Architects Daughter', cursive;
+}
+
+.title{
   background-color: #546d5a;
   text-align: center;
   color: #f9f6ef;
-
 }
 
 aside{
   background-color: #d6d6d6;
-  font-family: 'Architects Daughter', cursive;
   display: inline-block;
   float: left;
   margin-left: 20px;
@@ -21,7 +22,6 @@ aside{
 
 .mainAside{
   background-color: #d6d6d6;
-  font-family: 'Architects Daughter', cursive;
   display: inline-block;
   float: bottom;
   margin-left: 20px;
@@ -34,11 +34,10 @@ aside{
 }
 
   .mainplay {
-  font-family: 'Architects Daughter', cursive;
   font-size: 30px;
   background-size: 100%;
   background-color: #ff9681;
-  color: #ff9681;
+  color: blue;
   position: absolute;
   margin: auto;
   top: 0;
@@ -50,7 +49,6 @@ aside{
 }
 
   .gameplay {
-  font-family: 'Architects Daughter', cursive;
   font-size: 15px;
   background-size: 100%;
   background-color: #ff9681;
@@ -76,3 +74,16 @@ td img{
     height: auto;
     width: auto;
 }
+
+#verified {
+  position: fixed;
+  width: 300px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+}
+
+#verified img {
+  float: right;
+}
+

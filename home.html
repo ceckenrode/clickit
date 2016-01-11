@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Click-it Game</title>
   <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
-<div class="container-fluid title"><h2>Welcome to the super addictive game <span><h1>Cleekit</h1></h2></div>
+
 <body class="mainbody">
+  <div class="container-fluid title">
+    <h2>Welcome to the super addictive game</h2>
+    <h1>Cleekit</h1>
+  </div>
   <aside>
     <h5>Developed by Rolando Cosme</h5>
   </aside>
-  <div><button class="mainplay"><a href="game.html">pLay hEre</button></div>
-
+  <div>
+    <button onClick="parent.location='game.html'" class="mainplay">
+      pLay hEre
+    </button>
+  </div>
+  <div id="verified"><img src="images/profile.jpg"width="100"><p>Verified by Christian Eckenrode</p></div>
 </body>
+
 </html>

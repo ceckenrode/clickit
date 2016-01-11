@@ -1,14 +1,12 @@
 //this will count the clicks by looking up the id and changing the status of it
-
-var clicks = 0;
-
-
-function picClick () {
-    document.getElementById( "meme" );
-    if (this.getAttribute( "data-state" ) == "true") {
-    this.setAttribute ( "data-state"  , "false" ) ;
-    clicks = clicks++;
-  }
+var clicks;
+clicks = 0;
+function picClick() {
+    "use strict";
+    if (this.getAttribute("data-state") === "true") {
+        this.setAttribute("data-state", "false");
+        clicks++;
+    }
 }
 
 // function picClick () {

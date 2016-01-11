@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Click-it Game</title>
   <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
-<div class="container-fluid title"><h2>Cleekit</h2></div>
+
 <body>
-<aside>
+  <div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <p>Time's Up!!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="modal fade" id="yourTimeModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <p>You took <span id="seconds"></span> seconds!!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="container-fluid title">
+    <h2>Cleekit</h2></div>
+  <aside>
     <h2>-- How to Play: --</h2>
     <ul>
       <li>Click as many memes as you can</li>
@@ -24,38 +63,42 @@
     </ul>
   </aside>
   <div>
-    <table  class="col-md-8">
+    <table class="col-md-8">
       <tr>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image1.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image2.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image3.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image4.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image5.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image1.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image2.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image3.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image4.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image5.png"></td>
       </tr>
       <tr>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image6.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image7.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image8.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image9.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image10.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image6.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image7.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image8.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image9.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image10.png"></td>
       </tr>
       <tr>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image11.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image12.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image13.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image14.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image15.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image11.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image12.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image13.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image14.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image15.png"></td>
       </tr>
       <tr>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image16.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image17.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image18.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image19.png"></td>
-        <td><img id="meme" data-state="true" onclick="picClick ()" src="images/image20.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image16.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image17.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image18.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image19.png"></td>
+        <td><img alt="memepic" class="meme" data-state="true" onclick="picClick ()" src="images/image20.png"></td>
       </tr>
     </table>
   </div>
-<script type="text/javascript" src="js/timer.js"></script>
-<script type="text/javascript" src="js/mechanics.js"></script>
+  <div id="verified"><img src="images/profile.jpg"width="100"><p>Verified by Christian Eckenrode</p></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/timer.js"></script>
+  <script type="text/javascript" src="js/mechanics.js"></script>
 </body>
+
 </html>
